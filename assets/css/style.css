@@ -1,0 +1,647 @@
+@font-face{
+	font-family: "sammies";
+	src: url(../fonts/sammies.ttf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+}
+
+
+
+/*scroll bar*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #1c1c1c; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #9b9b9b; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/*end scroll bar*/
+
+
+
+
+
+
+/*landing page*/
+
+#jumbotron-section{
+	background-image: url(../images/lp.jpg), url(../images/paper.jpg);
+	background-position: center; 
+	background-size: cover; 
+	background-repeat: no-repeat;
+	height: 100vh;
+	transition: 2s
+}
+
+
+
+
+
+#jumbo-land{
+	position: absolute;
+	top: 300px;
+	left: 50px;
+	background: none;
+	border-radius: 0;
+	padding: 20px;
+	border-radius: 10px;
+	background: rgba(6, 6, 8, .8);
+}
+
+#jumbo-land:hover{
+	background: rgba(6, 6, 8, 1);
+}
+
+
+#jumbo-land:hover ~ #jumbotron-section{
+	background-blend-mode: color-burn;
+}
+
+
+.jumbotron h1 ,.jumbotron p{
+	color: #ccbfc9;
+	text-shadow: 0px 8px 10px rgba(0,0,0,.9);
+}
+
+
+.jumbotron hr{
+	background: #fff;
+	text-decoration: none;
+}
+
+.jumbotron img{
+	height: 80px;
+	width: 80px;
+}
+
+.jumbotron button{
+	color: #f05725;
+	border: 1px solid #f05725;
+	box-shadow: 0px 5px 7px rgba(0,0,0,.9);
+	padding: 10px;
+}
+
+.jumbotron a {
+	text-decoration: none;
+	color: #f05725;
+}
+
+.jumbotron button:hover{
+	background: #f05725;
+	color: #ccbfc9;
+}
+
+#underline:hover{
+	text-decoration: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 400px){
+	#jumbo-land{
+		top: 100px;
+		left: 15px;
+		width: 90%;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	#jumbo-land{
+		width: 60%;
+	}
+}
+
+
+@media only screen and (min-width: 961px){
+	#jumbo-land{
+		width: 30%;
+	}
+}
+
+
+
+/*end landing page*/
+
+
+
+
+
+
+
+
+
+
+/*start of team page*/
+
+#home-landing{
+	background: url(../images/header.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	max-height: 100%;
+	height: 90vh;
+	
+	}
+
+#home-h1{
+	background: rgba(6, 6, 8, .7);
+	height: 100%;
+	color: #fff;
+	font-size: 5em;
+	font-family: "sammies";
+	padding: 20%;
+	text-shadow: 0px 10px 12px rgba(0,0,0,.9);
+	width: 100%;
+}
+
+#home-landing #home-h1 img{
+	height: 200px;
+	width: 200px;
+	margin: 0 20px;
+}
+
+
+#navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #060608;
+	width: 100%;
+	z-index: 10000;
+}
+
+#nav-logo{
+	height: 30px;
+	width: 30px;
+}
+
+
+.hamburger div{
+	width: 30px;
+  	height: 3px;
+  	background-color: #ccbfc9;
+ 	margin: 6px 0;
+ 	transition: .5s;
+}
+
+
+.toggle.active .hamburger{
+	position: relative;
+	top: 1;
+}
+.toggle.active .hamburger div:nth-of-type(even){
+	background-color: rgba(0,0,0,0);
+}
+
+.toggle.active .hamburger div:nth-of-type(1){
+	position: absolute;
+	top: 0;
+	background-color: #9b9b9b;
+	transform: rotate(45deg);
+}
+.toggle.active .hamburger div:nth-of-type(3){
+	position: absolute;
+	top: 0;
+	background-color: #9b9b9b;
+	transform: rotate(135deg);
+}
+
+
+#navbar button{
+	outline: none;
+	border: none;
+
+}
+
+#bg{
+	background-color: #333;
+
+}
+
+#width-pc{
+    width: 100%;
+    background: rgb(6, 6, 8); 
+    border-radius: 10px;
+}
+
+
+
+
+
+#roster{
+	font-size: 3em;
+	color: #f05725;
+	font-weight: bolder;
+	text-shadow: 0px 5px 8px rgba(0,0,0,.5);
+}
+
+#h5-shadow{
+	font-size: 3em;
+	color: #f05725;
+	font-weight: bolder;
+	text-shadow: 0px 8px 11px rgba(0,0,0,.5);
+}
+
+#p-shadow{
+	font-size: 1em;
+	color: #fff;
+	font-weight: bolder;
+	letter-spacing: 3px;
+	text-shadow: 5px 8px 11px rgba(0,0,0,1);
+}
+
+#label{
+	background: rgba(6, 6, 8, .6); 
+	border-radius: 10px;
+	padding: 3PX; 
+	}
+
+#team-card{
+	background: rgb(6, 6, 8); 
+	border-radius: 5px;
+}
+
+#pic-card{
+	background: rgb(6, 6, 8); 
+	border-radius: 5px;
+	width: 18rem;
+}
+
+
+
+#team-card img { 
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#team-card h3, #pic-card h3{
+	color: #f05725;
+	margin: 0;
+}
+#team-card p, #pic-card p{
+	color: #ccbfc9;
+	margin: 0;
+}
+
+ iframe{
+	height: 60vh;
+	padding: 5px
+}
+
+#p-footer{
+	color: #f05725;
+	text-shadow: 0px 2px 5px rgba(0,0,0,.9);
+}
+#footer-bg{
+	background: rgb(6, 6, 8);
+}
+
+
+
+
+@media only screen and (max-width: 400px){
+		#home-landing{
+			height: 90vh;
+		}
+
+		#home-h1{
+		font-size: 30px;
+		text-align: center;
+		padding-top: 40%;
+		}
+
+		#label{
+		position: relative;
+		top: 0px;
+		left: -2px
+		}
+		#h5-shadow{
+		font-size: 2em;
+		font-weight: bold;
+		}
+		#p-shadow{
+		font-size: 1em;
+		font-weight: bold;
+		}
+		#roster{
+		font-size: 2em;
+	}
+
+
+}
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	#home-h1{
+		font-size: 5em;
+		padding-top: 40%;
+	}
+
+	#home-landing #home-h1 img{
+	height: 100px;
+	width: 100px;
+	}
+	#h5-shadow{
+	font-size: 3em;
+	}
+	#p-shadow{
+	font-size: 1em;
+	}
+
+	#label{
+	position: relative;
+	top: 0px;
+	left: -2px
+	}
+	#roster{
+		font-size: 3em;
+	}
+	#team-card p{
+	line-height: 1.1;
+	}
+
+	
+}
+
+
+
+
+/*end of team page*/
+
+
+
+/*start of history*/
+
+#about-landing{
+	background: url(../images/history.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	max-height: 100%;
+	height: 90vh;
+	}
+#about-h1{
+	background: rgba(6, 6, 8, .8);
+	height: 100%;
+	color: #fff;
+	font-size: 8em;
+	font-family: "sammies";
+	padding: 20%;
+	text-shadow: 0px 10px 12px rgba(0,0,0,.9);
+}
+
+#mission{
+	height: 100%;
+	background: #333;
+	color: #fff;
+}
+
+
+
+.about-tags{
+	color: #f05725;
+	font-weight: bolder;
+}
+
+#time-btn{
+	background: #f05725;
+	border-radius: 10px;
+}
+
+#time-btn a{
+	color: white;
+
+}
+
+
+
+@media only screen and (max-width: 400px){
+	#about-h1{
+	font-size: 4em;
+	padding-top: 70%;
+	
+	}
+
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	#about-h1{
+		font-size: 5em;
+		padding-top: 50%;
+
+	}
+
+
+}
+
+
+
+/*end of history*/
+
+
+/*start of achievments*/
+
+#achieve-landing{
+	background: url(../images/achiev.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	max-height: 100%;
+	height: 90vh;
+	
+	}
+
+#achieve-h1{
+	background: rgba(6, 6, 8, .7);
+	height: 100%;
+	color: #fff;
+	font-size: 8em;
+	font-family: "sammies";
+	padding: 20%;
+	text-shadow: 0px 10px 12px rgba(0,0,0,.9);
+	width: 100%;
+}
+
+#achieve-card{
+	background-color: #060608; 
+}
+
+#achieve-card:hover img{
+	opacity: .3;
+	cursor: pointer;
+}
+
+
+#modal{
+	background: #333;
+}
+
+#ex{
+	color: #ccbfc9;
+}
+
+#modal-box h3{
+	color: #f05725;
+	text-shadow: 0px 5px 8px rgba(0,0,0,.5);
+}
+
+#modal-box img{
+	height: 35%;
+	width: 35%;
+	margin-left: 35%; 
+}
+
+
+#modal-box p{
+	color:#ccbfc9;
+	font-weight: bold;
+	font-size: 1rem;
+	text-shadow: 0px 3px 6px rgba(0,0,0,.5);
+}
+
+
+
+@media only screen and (max-width: 400px){
+	#achieve-h1{
+		font-size: 2em;
+		padding-top: 70%;
+	}
+
+	#modal-box img{
+	margin-left: 30%; 
+	}
+
+}
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	#achieve-h1{
+		font-size: 5em;
+		padding-top: 50%;
+
+	}
+
+
+}
+
+/*end of achievments*/
+
+
+/*recent-matches*/
+
+#recent-landing{
+	background: url(../images/recent.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	max-height: 100%;
+	height: 90vh;
+	
+	}
+
+#recent-h1{
+	background: rgba(6, 6, 8, .7);
+	height: 100%;
+	color: #fff;
+	font-size: 5em;
+	font-family: "sammies";
+	padding: 20%;
+	text-shadow: 0px 10px 12px rgba(0,0,0,.9);
+	width: 100%;
+}
+
+
+#table{
+	background-color: #060608;
+	color:#ccbfc9;
+	font-weight: bold;
+	border: 1px solid #ccbfc9;
+}
+
+#table thead tr{
+	color:#f05725;
+}
+
+#table tbody tr img{
+	height: 5%;
+	width: 5%;
+}
+
+
+#table tbody tr:hover{
+	background-color: #222;
+}
+
+
+#lose{
+ color: #ca867f;
+ text-transform: uppercase;
+}
+
+#win{
+	color: #7fca9f;
+	 text-transform: uppercase;
+}
+@media only screen and (max-width: 400px){
+	#recent-h1{
+		font-size: 3em;
+		padding-top: 70%;
+	}
+	#display{
+		display:none;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	#recent-h1{
+		font-size: 4em;
+		padding-top: 50%;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end of recent-matches*/
