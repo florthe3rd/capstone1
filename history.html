@@ -11,8 +11,8 @@
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css?family=Rubik|Rubik+Mono+One&display=swap" rel="stylesheet">
 
-	<!-- animate css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<!--scroll animation css -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
 
 	<!-- fontawesome -->
@@ -75,8 +75,8 @@
 
 		
 
-		<section id="about-landing">
-			<h1 id="about-h1" class="text-center">
+		<section id="about-landing" >
+			<h1 id="about-h1" class="text-center" data-aos="fade" data-aos-duration="1000" data-aos-delay="0">
 				History
 			</h1>
 		</section>
@@ -86,6 +86,7 @@
 			
 
 			<div class="container-fluid p-5" id="mission" >
+			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
 			  <h2 class="about-tags mb-5" id="roster">Time Line</h2>
 			  <ul class="nav nav-tabs mb-3">
 			    <li class="px-3 mx-1 mb-2" id="time-btn"><a data-toggle="tab" href="#y2013">2013</a></li>
@@ -101,7 +102,7 @@
 			      <h3 class="about-tags">2013</h3>
 			      <ul>
 			      	<li class="ml-5">May 24 - TnC reports that their Dota 2, Dota and LoL squads have been released.</li>
-			      <ul>
+			      </ul>
 			    </div>
 			    
 			    <div id="y2015" class="tab-pane fade">
@@ -111,7 +112,7 @@
 				    <li class="ml-5">August 21 - TnC announces that seven is out and Teehee has decided to stop playing competitive Dota 2 to focus on his studies. In their place they acquired the ex-MSI player Polo.</li>
 			      	<li class="ml-5 lead">October - Teehee returns to active play, replacing gnoji.</li>
 			      	<li class="ml-5 lead">December - Klo registers as a sub for the upcoming Majors.</li>
-			      <ul>
+			      </ul>
 			    </div>
 			    <div id="y2016" class="tab-pane fade">
 			      <h3 class="about-tags">2016</h3>
@@ -206,14 +207,16 @@
 			    </div>
 			  </div>
 			</div>
-			<section id="mission" class="p-5">
-				<h2 class="mb-5 about-tags" id="roster">The International 2016</h2>
+			</div>
+			<section id="mission" class="p-5" >
+				<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+				<h2 class="mb-5 about-tags" id="roster" >The International 2016</h2>
 				<p class="text-justify">After acquiring DeMoN as captain, TNC placed first in the TI 6 Southeast Asia Qualifiers to become the first Philippine team to qualify for The International since Mineski at TI 1. They encountered visa trouble, but successfully secured US visas after support from, among others, Valve and Philippine Senator Bam Aquino.</p>
 
 				<p class="text-justify lead">At The International 2016, the team started in the lower bracket after a 7/7 result in the group stage. They first faced Vici Gaming Reborn, who were missing their starting offlaner, Yang, due to visa trouble. TNC prevailed, thus securing a best-of-three rematch against Group A winner OG, who had won both of their head-to-head games versus TNC earlier. After winning Game 1 thanks to a fast start, TNC further shocked viewers by defeating the two-time major champions again in game two, despite a 20,000-Gold deficit near the hour mark. TNC's victory was described by some as the biggest upset in the history of The International.</p>
 
 				<p class="text-justify lead">Although TNC lost their next series against the eventual second place team, Digital Chaos, the team had secured over $500,000 USD (Over 20 million Philippine Pesos).</p>
-				
+				</div>
 			</section>
 
 		<footer class="footer" id="footer-bg">
@@ -239,13 +242,16 @@
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!-- local jquery -->
-<script src="assets/js/script.js"></script>
 
 <!-- Popper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- scroll animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- local jquery -->
+<script src="assets/js/script.js"></script>
 </body>
 </html>

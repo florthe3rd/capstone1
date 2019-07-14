@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Rubik|Rubik+Mono+One&display=swap" rel="stylesheet">
 
 	<!-- animate css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
 
 	<!-- fontawesome -->
@@ -74,7 +74,7 @@
 		<!-- home -->
 
 		<div id="home-landing">
-		<h1 id="home-h1" class="text-center">
+		<h1 id="home-h1" class="text-center" data-aos="fade" data-aos-duration="1000" data-aos-delay="0">
 			<img src="assets/images/logo.png">TNC Predator
 		</h1>
 		</div>
@@ -84,8 +84,8 @@
 		<!-- carousel player roster -->
 <div class="container p-2">
 
-		<div class="row mx-0" id="width-pc">
-				<div class="col-8 offset-2 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+		<div class="row mx-0" id="width-pc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+				<div class="col-8 offset-2 col-md-8 offset-md-2 col-lg-6 offset-lg-3" >
 					<h1 class="text-center m-0" id="roster">Player Roster</h1>
 					<div id="carousel-home" class="carousel slide carousel-fade" data-ride="carousel">
 
@@ -155,7 +155,7 @@
 <!-- coach -->
 <div class="container-fluid py-5 " id="coach-cont">
 	<div class="row mx-3">
-		<div class="col-12 col-md-5 col-lg-3 mx-md-4 mx-lg-0 py-4">
+		<div class="col-12 col-md-5 col-lg-3 mx-md-4 mx-lg-0 py-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay=0>
 			<div class="card" id="pic-card">
 				<img src="assets/images/heen.jpg" class="card-img-top img-fluid">
 				 <div class="card-body" id="coach-info">
@@ -165,7 +165,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-12 col-md-5 col-lg-3 mx-md-4 mx-lg-0 py-4">
+		<div class="col-12 col-md-5 col-lg-3 mx-md-4 mx-lg-0 py-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
 			<div class="card" id="pic-card">
 				<img src="assets/images/1437.jpg" class="card-img-top img-fluid">
 				 <div class="card-body" id="coach-info">
@@ -175,7 +175,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-12 col-md-5 col-lg-3 mx-md-4 mx-lg-0 py-4">
+		<div class="col-12 col-md-5 col-lg-3 mx-md-4 mx-lg-0 py-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
 			<div class="card" id="pic-card">
 				<img src="assets/images/kips.jpg" class="card-img-top img-fluid">
 				 <div class="card-body" id="coach-info">
@@ -185,7 +185,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-12 col-md-5 col-lg-3 mx-md-4 mx-lg-0 py-4">
+		<div class="col-12 col-md-5 col-lg-3 mx-md-4 mx-lg-0 py-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
 			<div class="card" id="pic-card">
 				<img src="assets/images/sun.jpg" class="card-img-top img-fluid">
 				 <div class="card-body" id="coach-info">
@@ -203,7 +203,7 @@
 <div class="container-fluid py-5">
 	<div class="row">
 
-		<div class="col-12">
+		<div class="col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
 					<div class="card mb-5 mx-1" id="team-card">
 					<h1 class="text-center m-2" id="roster">Breakthrough Moments</h1>
   					<iframe src="https://www.youtube.com/embed/QG61j-coCgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -215,7 +215,7 @@
 		</div> <!-- end 4 cols -->
 	</div>
 	<div class="row">
-		<div class="col-12">
+		<div class="col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
 				<div class="card mb-5 mx-1" id="team-card">
 					<h1 class="text-center m-2" id="roster">Highlights</h1>
   					<iframe src="https://www.youtube.com/embed/_Z5F-nYIVsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -227,7 +227,7 @@
 		</div> <!-- end 4 cols -->
 	</div>
 	<div class="row">
-		<div class="col-12">
+		<div class="col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
 				<div class="card mb-5 mx-1" id="team-card">
 					<h1 class="text-center m-2" id="roster">Highlights</h1>
   					<iframe src="https://www.youtube.com/embed/QfvcFfRAm-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -266,13 +266,20 @@
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!-- local jquery -->
-<script src="assets/js/script.js"></script>
+
 
 <!-- Popper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- scroll animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- local jquery -->
+<script src="assets/js/script.js"></script>
+
+
+
 </body>
 </html>

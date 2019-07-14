@@ -1,3 +1,6 @@
+
+AOS.init();
+
 $(document).ready(function(){
 	// icon animation
 	$('.toggle').on("click", function(){
