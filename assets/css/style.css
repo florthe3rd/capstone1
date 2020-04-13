@@ -171,11 +171,14 @@
 	background: rgba(6, 6, 8, .7);
 	height: 100%;
 	color: #fff;
-	font-size: 5em;
+	font-size: 10vw;
 	font-family: "sammies";
-	padding: 20%;
+	
 	text-shadow: 0px 10px 12px rgba(0,0,0,.9);
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #home-landing #home-h1 img{
@@ -288,7 +291,7 @@
 #pic-card{
 	background: rgb(6, 6, 8); 
 	border-radius: 5px;
-	width: 18rem;
+	
 }
 
 
@@ -327,11 +330,13 @@
 		#home-landing{
 			height: 90vh;
 		}
-
+		#home-landing #home-h1 img{
+			height: 100px;
+			width: 100px;
+		}
 		#home-h1{
-		font-size: 30px;
+		font-size:8vw;
 		text-align: center;
-		padding-top: 40%;
 		}
 
 		#label{
@@ -357,10 +362,9 @@
 
 
 @media only screen and (min-width: 401px) and (max-width: 960px){
-	#home-h1{
-		font-size: 5em;
-		padding-top: 40%;
-	}
+	/* #home-h1{
+		font-size: 2vw;
+	} */
 
 	#home-landing #home-h1 img{
 	height: 100px;
@@ -410,10 +414,12 @@
 	background: rgba(6, 6, 8, .8);
 	height: 100%;
 	color: #fff;
-	font-size: 8em;
+	font-size: 10vw;
 	font-family: "sammies";
-	padding: 20%;
 	text-shadow: 0px 10px 12px rgba(0,0,0,.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #mission{
@@ -444,7 +450,6 @@
 @media only screen and (max-width: 400px){
 	#about-h1{
 	font-size: 4em;
-	padding-top: 70%;
 	
 	}
 
@@ -454,8 +459,6 @@
 @media only screen and (min-width: 401px) and (max-width: 960px){
 	#about-h1{
 		font-size: 5em;
-		padding-top: 50%;
-
 	}
 
 
@@ -483,11 +486,13 @@
 	background: rgba(6, 6, 8, .7);
 	height: 100%;
 	color: #fff;
-	font-size: 8em;
+	font-size: 10vw;
 	font-family: "sammies";
-	padding: 20%;
 	text-shadow: 0px 10px 12px rgba(0,0,0,.9);
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #achieve-card{
@@ -531,8 +536,7 @@
 
 @media only screen and (max-width: 400px){
 	#achieve-h1{
-		font-size: 2em;
-		padding-top: 70%;
+		font-size: 3em;
 	}
 
 	#modal-box img{
@@ -543,15 +547,7 @@
 
 
 
-@media only screen and (min-width: 401px) and (max-width: 960px){
-	#achieve-h1{
-		font-size: 5em;
-		padding-top: 50%;
 
-	}
-
-
-}
 
 /*end of achievments*/
 
@@ -573,11 +569,13 @@
 	background: rgba(6, 6, 8, .7);
 	height: 100%;
 	color: #fff;
-	font-size: 5em;
+	font-size: 10vw;
 	font-family: "sammies";
-	padding: 20%;
 	text-shadow: 0px 10px 12px rgba(0,0,0,.9);
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -591,6 +589,13 @@
 #table thead tr{
 	color:#f05725;
 }
+
+.table td, .table th {
+    padding: .40rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
 
 #table tbody tr img{
 	height: 5%;
@@ -612,10 +617,9 @@
 	color: #7fca9f;
 	 text-transform: uppercase;
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 414px){
 	#recent-h1{
 		font-size: 3em;
-		padding-top: 70%;
 	}
 	#display{
 		display:none;
@@ -627,8 +631,7 @@
 
 @media only screen and (min-width: 401px) and (max-width: 960px){
 	#recent-h1{
-		font-size: 4em;
-		padding-top: 50%;
+		font-size: 10vw;
 
 	}
 
